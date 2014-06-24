@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7ACD27581952832000B09FD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACD27571952832000B09FD1 /* Foundation.framework */; };
+		7ACD275A1952832000B09FD1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACD27591952832000B09FD1 /* CoreGraphics.framework */; };
+		7ACD275C1952832000B09FD1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACD275B1952832000B09FD1 /* UIKit.framework */; };
+		7ACD27621952832000B09FD1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7ACD27601952832000B09FD1 /* InfoPlist.strings */; };
+		7ACD27641952832000B09FD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACD27631952832000B09FD1 /* main.m */; };
+		7ACD27681952832000B09FD1 /* JLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACD27671952832000B09FD1 /* JLAppDelegate.m */; };
+		7ACD276A1952832000B09FD1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ACD27691952832000B09FD1 /* Images.xcassets */; };
+		7ACD27711952832000B09FD1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACD27701952832000B09FD1 /* XCTest.framework */; };
+		7ACD27721952832000B09FD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACD27571952832000B09FD1 /* Foundation.framework */; };
+		7ACD27731952832000B09FD1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACD275B1952832000B09FD1 /* UIKit.framework */; };
+		7ACD277B1952832000B09FD1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7ACD27791952832000B09FD1 /* InfoPlist.strings */; };
+		7ACD277D1952832000B09FD1 /* facebook_paperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACD277C1952832000B09FD1 /* facebook_paperTests.m */; };
+		7ACD27891959DEB500B09FD1 /* PaperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACD27871959DEB500B09FD1 /* PaperViewController.m */; };
+		7ACD278A1959DEB500B09FD1 /* PaperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ACD27881959DEB500B09FD1 /* PaperViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7ACD27741952832000B09FD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7ACD274C1952831F00B09FD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7ACD27531952832000B09FD1;
+			remoteInfo = "facebook-paper";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7ACD27541952832000B09FD1 /* facebook-paper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "facebook-paper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ACD27571952832000B09FD1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7ACD27591952832000B09FD1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7ACD275B1952832000B09FD1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7ACD275F1952832000B09FD1 /* facebook-paper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "facebook-paper-Info.plist"; sourceTree = "<group>"; };
+		7ACD27611952832000B09FD1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7ACD27631952832000B09FD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7ACD27651952832000B09FD1 /* facebook-paper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "facebook-paper-Prefix.pch"; sourceTree = "<group>"; };
+		7ACD27661952832000B09FD1 /* JLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLAppDelegate.h; sourceTree = "<group>"; };
+		7ACD27671952832000B09FD1 /* JLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLAppDelegate.m; sourceTree = "<group>"; };
+		7ACD27691952832000B09FD1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7ACD276F1952832000B09FD1 /* facebook-paperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "facebook-paperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ACD27701952832000B09FD1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7ACD27781952832000B09FD1 /* facebook-paperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "facebook-paperTests-Info.plist"; sourceTree = "<group>"; };
+		7ACD277A1952832000B09FD1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7ACD277C1952832000B09FD1 /* facebook_paperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = facebook_paperTests.m; sourceTree = "<group>"; };
+		7ACD27861959DEB500B09FD1 /* PaperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaperViewController.h; path = controllers/PaperViewController.h; sourceTree = "<group>"; };
+		7ACD27871959DEB500B09FD1 /* PaperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaperViewController.m; path = controllers/PaperViewController.m; sourceTree = "<group>"; };
+		7ACD27881959DEB500B09FD1 /* PaperViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PaperViewController.xib; path = controllers/PaperViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7ACD27511952832000B09FD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ACD275A1952832000B09FD1 /* CoreGraphics.framework in Frameworks */,
+				7ACD275C1952832000B09FD1 /* UIKit.framework in Frameworks */,
+				7ACD27581952832000B09FD1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ACD276C1952832000B09FD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ACD27711952832000B09FD1 /* XCTest.framework in Frameworks */,
+				7ACD27731952832000B09FD1 /* UIKit.framework in Frameworks */,
+				7ACD27721952832000B09FD1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7ACD274B1952831F00B09FD1 = {
+			isa = PBXGroup;
+			children = (
+				7ACD278B1959DEC400B09FD1 /* controllers */,
+				7ACD275D1952832000B09FD1 /* facebook-paper */,
+				7ACD27761952832000B09FD1 /* facebook-paperTests */,
+				7ACD27561952832000B09FD1 /* Frameworks */,
+				7ACD27551952832000B09FD1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7ACD27551952832000B09FD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7ACD27541952832000B09FD1 /* facebook-paper.app */,
+				7ACD276F1952832000B09FD1 /* facebook-paperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7ACD27561952832000B09FD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7ACD27571952832000B09FD1 /* Foundation.framework */,
+				7ACD27591952832000B09FD1 /* CoreGraphics.framework */,
+				7ACD275B1952832000B09FD1 /* UIKit.framework */,
+				7ACD27701952832000B09FD1 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7ACD275D1952832000B09FD1 /* facebook-paper */ = {
+			isa = PBXGroup;
+			children = (
+				7ACD27661952832000B09FD1 /* JLAppDelegate.h */,
+				7ACD27671952832000B09FD1 /* JLAppDelegate.m */,
+				7ACD27691952832000B09FD1 /* Images.xcassets */,
+				7ACD275E1952832000B09FD1 /* Supporting Files */,
+			);
+			path = "facebook-paper";
+			sourceTree = "<group>";
+		};
+		7ACD275E1952832000B09FD1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7ACD275F1952832000B09FD1 /* facebook-paper-Info.plist */,
+				7ACD27601952832000B09FD1 /* InfoPlist.strings */,
+				7ACD27631952832000B09FD1 /* main.m */,
+				7ACD27651952832000B09FD1 /* facebook-paper-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7ACD27761952832000B09FD1 /* facebook-paperTests */ = {
+			isa = PBXGroup;
+			children = (
+				7ACD277C1952832000B09FD1 /* facebook_paperTests.m */,
+				7ACD27771952832000B09FD1 /* Supporting Files */,
+			);
+			path = "facebook-paperTests";
+			sourceTree = "<group>";
+		};
+		7ACD27771952832000B09FD1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7ACD27781952832000B09FD1 /* facebook-paperTests-Info.plist */,
+				7ACD27791952832000B09FD1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7ACD278B1959DEC400B09FD1 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7ACD27861959DEB500B09FD1 /* PaperViewController.h */,
+				7ACD27871959DEB500B09FD1 /* PaperViewController.m */,
+				7ACD27881959DEB500B09FD1 /* PaperViewController.xib */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7ACD27531952832000B09FD1 /* facebook-paper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ACD27801952832000B09FD1 /* Build configuration list for PBXNativeTarget "facebook-paper" */;
+			buildPhases = (
+				7ACD27501952832000B09FD1 /* Sources */,
+				7ACD27511952832000B09FD1 /* Frameworks */,
+				7ACD27521952832000B09FD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "facebook-paper";
+			productName = "facebook-paper";
+			productReference = 7ACD27541952832000B09FD1 /* facebook-paper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7ACD276E1952832000B09FD1 /* facebook-paperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ACD27831952832000B09FD1 /* Build configuration list for PBXNativeTarget "facebook-paperTests" */;
+			buildPhases = (
+				7ACD276B1952832000B09FD1 /* Sources */,
+				7ACD276C1952832000B09FD1 /* Frameworks */,
+				7ACD276D1952832000B09FD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7ACD27751952832000B09FD1 /* PBXTargetDependency */,
+			);
+			name = "facebook-paperTests";
+			productName = "facebook-paperTests";
+			productReference = 7ACD276F1952832000B09FD1 /* facebook-paperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7ACD274C1952831F00B09FD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JL;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = mn8;
+				TargetAttributes = {
+					7ACD276E1952832000B09FD1 = {
+						TestTargetID = 7ACD27531952832000B09FD1;
+					};
+				};
+			};
+			buildConfigurationList = 7ACD274F1952831F00B09FD1 /* Build configuration list for PBXProject "facebook-paper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7ACD274B1952831F00B09FD1;
+			productRefGroup = 7ACD27551952832000B09FD1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7ACD27531952832000B09FD1 /* facebook-paper */,
+				7ACD276E1952832000B09FD1 /* facebook-paperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7ACD27521952832000B09FD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ACD27621952832000B09FD1 /* InfoPlist.strings in Resources */,
+				7ACD278A1959DEB500B09FD1 /* PaperViewController.xib in Resources */,
+				7ACD276A1952832000B09FD1 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ACD276D1952832000B09FD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ACD277B1952832000B09FD1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7ACD27501952832000B09FD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ACD27891959DEB500B09FD1 /* PaperViewController.m in Sources */,
+				7ACD27681952832000B09FD1 /* JLAppDelegate.m in Sources */,
+				7ACD27641952832000B09FD1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ACD276B1952832000B09FD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ACD277D1952832000B09FD1 /* facebook_paperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7ACD27751952832000B09FD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7ACD27531952832000B09FD1 /* facebook-paper */;
+			targetProxy = 7ACD27741952832000B09FD1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7ACD27601952832000B09FD1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7ACD27611952832000B09FD1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7ACD27791952832000B09FD1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7ACD277A1952832000B09FD1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7ACD277E1952832000B09FD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7ACD277F1952832000B09FD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7ACD27811952832000B09FD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "facebook-paper/facebook-paper-Prefix.pch";
+				INFOPLIST_FILE = "facebook-paper/facebook-paper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7ACD27821952832000B09FD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "facebook-paper/facebook-paper-Prefix.pch";
+				INFOPLIST_FILE = "facebook-paper/facebook-paper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7ACD27841952832000B09FD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/facebook-paper.app/facebook-paper";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "facebook-paper/facebook-paper-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "facebook-paperTests/facebook-paperTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7ACD27851952832000B09FD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/facebook-paper.app/facebook-paper";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "facebook-paper/facebook-paper-Prefix.pch";
+				INFOPLIST_FILE = "facebook-paperTests/facebook-paperTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7ACD274F1952831F00B09FD1 /* Build configuration list for PBXProject "facebook-paper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ACD277E1952832000B09FD1 /* Debug */,
+				7ACD277F1952832000B09FD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7ACD27801952832000B09FD1 /* Build configuration list for PBXNativeTarget "facebook-paper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ACD27811952832000B09FD1 /* Debug */,
+				7ACD27821952832000B09FD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7ACD27831952832000B09FD1 /* Build configuration list for PBXNativeTarget "facebook-paperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ACD27841952832000B09FD1 /* Debug */,
+				7ACD27851952832000B09FD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7ACD274C1952831F00B09FD1 /* Project object */;
+}
