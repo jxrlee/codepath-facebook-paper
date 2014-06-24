@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaperViewController">
             <connections>
+                <outlet property="headlineImage" destination="tNd-hZ-H9Y" id="QWw-k5-PML"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,13 +19,26 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="headline" translatesAutoresizingMaskIntoConstraints="NO" id="tNd-hZ-H9Y">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="58o-Nl-7FZ" appends="YES" id="qY6-9m-jPf"/>
+                    </connections>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="58o-Nl-7FZ">
+            <connections>
+                <action selector="onHeadlineDrag:" destination="-1" id="wQq-cn-lxn"/>
+            </connections>
+        </panGestureRecognizer>
     </objects>
     <resources>
+        <image name="headline" width="320" height="568"/>
         <image name="menu" width="320" height="568"/>
     </resources>
 </document>

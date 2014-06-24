@@ -16,6 +16,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
+    // set rootview
     PaperViewController *vc = [[PaperViewController alloc] init];
     self.window.rootViewController = vc;
     
