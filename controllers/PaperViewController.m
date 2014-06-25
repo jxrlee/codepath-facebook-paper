@@ -17,6 +17,7 @@
 @property (assign,nonatomic) CGPoint newsOffset;
 @property (assign, nonatomic) float viewWidth;
 @property (assign, nonatomic) float viewHeight;
+@property (assign, nonatomic) float startY;
 
 
 @property (weak, nonatomic) IBOutlet UIImageView *headlineImage;
@@ -83,18 +84,19 @@
     
     // get touch location
     CGPoint touchPosition = [sender locationInView:self.view];
-    CGPoint initialPosition;
     
     if(sender.state == UIGestureRecognizerStateBegan) {
 
-        NSLog(@"Touch: %f", touchPosition.y);
+        //NSLog(@"Touch: %f", touchPosition.y);
         
         // set offset
         self.headlineOffset = CGPointMake(touchPosition.x - self.headlineImage.center.x, touchPosition.y - self.headlineImage.center.y);
         self.newsOffset = CGPointMake(0, self.newsView.center.y - self.headlineImage.center.y);
-        initialPosition = CGPointMake(touchPosition.x, touchPosition.y);
+        self.startY = touchPosition.y;
         
-        NSLog(@"Offset %f", self.headlineOffset.y);
+        //NSLog(@"Offset %f", self.headlineOffset.y);
+        NSLog(@"Center %f", self.headlineImage.center.y);
+        NSLog(@"startY %f", self.startY);
         
     } else if (sender.state == UIGestureRecognizerStateChanged){
         
@@ -103,11 +105,12 @@
         float newsCenter = self.newsView.frame.size.width/2;
         
         // set new positions
-        if(self.headlineImage.frame.origin.y <= 0) {
+        if(self.headlineImage.frame.origin.y < 0) {
             
-            NSLog(@"dragging up %f", touchPosition.y/5 - self.headlineOffset.y);
-            self.headlineImage.center = CGPointMake(headlineCenter, touchPosition.y/5 - self.headlineOffset.y);
-            self.newsView.center = CGPointMake(newsCenter, touchPosition.y/5 - self.headlineOffset.y + self.newsOffset.y);
+            //NSLog(@"%f %f %f", touchPosition.y, touchPosition.y/10, self.headlineOffset.y);
+            NSLog(@"dragging up %f", self.startY + touchPosition.y/10 - self.headlineOffset.y);
+            self.headlineImage.center = CGPointMake(headlineCenter, self.startY + touchPosition.y/10 - self.headlineOffset.y);
+            self.newsView.center = CGPointMake(newsCenter, self.startY + touchPosition.y/10 - self.headlineOffset.y + self.newsOffset.y);
             
         } else {
             
