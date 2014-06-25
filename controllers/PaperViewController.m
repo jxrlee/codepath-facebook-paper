@@ -113,10 +113,15 @@
             
             // something here to adjust the center value so it doesn't jump from y to y/10
             float diff = 0;
+            float positionWithoutFriction = touchPosition.y - self.headlineOffset.y;
+            float gestureBeyondThreshold = 284 - positionWithoutFriction;
+            float positionWithFriction = 284 - gestureBeyondThreshold/5;
             
             // new values
-            self.headlineImage.center = CGPointMake(headlineCenter, diff + touchPosition.y/10 - self.headlineOffset.y);
-            self.newsView.center = CGPointMake(newsCenter, touchPosition.y/10 - self.headlineOffset.y + self.newsOffset.y);
+            //self.headlineImage.center = CGPointMake(headlineCenter, diff + touchPosition.y/5 - self.headlineOffset.y);
+            //self.newsView.center = CGPointMake(newsCenter, touchPosition.y/5 - self.headlineOffset.y + self.newsOffset.y);
+            self.headlineImage.center = CGPointMake(headlineCenter, positionWithFriction);
+            self.newsView.center = CGPointMake(newsCenter, positionWithFriction + self.newsOffset.y);
             
         } else {
             
