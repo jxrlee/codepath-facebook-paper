@@ -87,7 +87,7 @@
     
     if(sender.state == UIGestureRecognizerStateBegan) {
 
-        //NSLog(@"Touch: %f", touchPosition.y);
+        NSLog(@"Touch: %f", touchPosition.y);
         
         // set offset
         self.headlineOffset = CGPointMake(touchPosition.x - self.headlineImage.center.x, touchPosition.y - self.headlineImage.center.y);
@@ -108,13 +108,20 @@
         if(self.headlineImage.frame.origin.y < 0) {
             
             //NSLog(@"%f %f %f", touchPosition.y, touchPosition.y/10, self.headlineOffset.y);
-            NSLog(@"dragging up %f", self.startY + touchPosition.y/10 - self.headlineOffset.y);
-            self.headlineImage.center = CGPointMake(headlineCenter, self.startY + touchPosition.y/10 - self.headlineOffset.y);
-            self.newsView.center = CGPointMake(newsCenter, self.startY + touchPosition.y/10 - self.headlineOffset.y + self.newsOffset.y);
+            NSLog(@"dragging up %f %f", touchPosition.y/10 - self.headlineOffset.y, self.headlineImage.center.y);
+            //NSLog(@"dragging up %f", self.headlineImage.frame.origin.y);
+            
+            // something here to adjust the center value so it doesn't jump from y to y/10
+            float diff = 0;
+            
+            // new values
+            self.headlineImage.center = CGPointMake(headlineCenter, diff + touchPosition.y/10 - self.headlineOffset.y);
+            self.newsView.center = CGPointMake(newsCenter, touchPosition.y/10 - self.headlineOffset.y + self.newsOffset.y);
             
         } else {
             
-            NSLog(@"dragging down %f", touchPosition.y - self.headlineOffset.y);
+            //NSLog(@"dragging down %f", touchPosition.y - self.headlineOffset.y);
+            NSLog(@"dragging down %f", self.headlineImage.frame.origin.y);
             self.headlineImage.center = CGPointMake(headlineCenter, touchPosition.y - self.headlineOffset.y);
             self.newsView.center = CGPointMake(newsCenter, touchPosition.y - self.headlineOffset.y + self.newsOffset.y);
         
